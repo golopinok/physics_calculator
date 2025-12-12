@@ -1,1 +1,1 @@
-# physics_calculatior
+# physics_calculator
