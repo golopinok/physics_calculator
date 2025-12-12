@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Главная страница</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <noscript>No JavaScript support!</noscript>
+        <form action="">
+            <p id="formula"></p><br><br>
+            <label id="fnum"></label><input id="input1"><label id="fnum-mer"></label><br>
+            <label id="snum"></label><input id="input2"><label id="snum-mer"></label><br><br>
+            <input type="button" onclick="start()" value="Рассчитать"><br><br>
+            <p id="inner"></p>
+            <input type="button" onclick=check_select("f") class="select_form" value="F (1 закон Ньютона)"><br>
+            <input type="button" onclick=check_select("v") class="select_form" value="V (скорость)"><br>
+            <input type="button" onclick=check_select("s") class="select_form" value="S (расстояние)"><br>
+            <input type="button" onclick=check_select("t") class="select_form" value="t (время)"><br>
+            <input type="button" onclick=check_select("vo") class="select_form" value="V (объём)"><br>
+            <input type="button" onclick=check_select("k") class="select_form" value="k (коэфицент жесткости)"><br>
+            <input type="button" onclick=check_select("fg") class="select_form" value="F (закон Гука)"><br>
+        </form>
+        <script src="main.js"></script>
+    </body>
+</html>
