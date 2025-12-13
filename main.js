@@ -77,14 +77,14 @@ function check_select(input) {
             document.getElementById("formula").innerHTML = "k=F/l";
             document.getElementById("fnum").innerHTML = "F=";
             document.getElementById("snum").innerHTML = "l=";
-            document.getElementById("fnum-mer").innerHTML = "H/m";
+            document.getElementById("fnum-mer").innerHTML = "H";
             document.getElementById("snum-mer").innerHTML = "m";
             break;
         case "fg":
             document.getElementById("formula").innerHTML = "F=kl";
             document.getElementById("fnum").innerHTML = "k=";
             document.getElementById("snum").innerHTML = "l=";
-            document.getElementById("fnum-mer").innerHTML = " ";
+            document.getElementById("fnum-mer").innerHTML = "H/m";
             document.getElementById("snum-mer").innerHTML = "m";
             break;
     }
