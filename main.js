@@ -1,33 +1,42 @@
-var select = "f";
+var select;
 function start() {
     var input1 = document.getElementById("input1").value;
     var input2 = document.getElementById("input2").value;
-    switch(select) {
-        case "f":
-            document.getElementById("inner").innerHTML = "F="+(input1*input2)+"H";
-            break;
-        case "v":
-            document.getElementById("inner").innerHTML = "V="+(input1/input2)+"m/s";
-            break;
-        case "s":
-            document.getElementById("inner").innerHTML = "S="+(input1*input2)+"m";
-            break;
-        case "t":
-            document.getElementById("inner").innerHTML = "t="+(input1/input2)+"s";
-            break;
-        case "vo":
-            document.getElementById("inner").innerHTML = "V="+(input1*input2)+"cm<sup>3</sup>";
-            break;
-        case "k":
-            document.getElementById("inner").innerHTML = "k="+(input1/input2)+"H/m";
-            break;
-        case "fg":
-            document.getElementById("inner").innerHTML = "F="+(input1*input2)+"H";
-            break;
+    var umn = input1*input2;
+    var del = input1/input2;
+    if(umn) {
+        switch(select) {
+            case "f":
+                document.getElementById("result").innerHTML = "F="+umn+"H";
+                break;
+            case "v":
+                document.getElementById("result").innerHTML = "V="+del+"m/s";
+                break;
+            case "s":
+                document.getElementById("result").innerHTML = "S="+umn+"m";
+                break;
+            case "t":
+                document.getElementById("result").innerHTML = "t="+del+"s";
+                break;
+            case "vo":
+                document.getElementById("result").innerHTML = "V="+umn+"cm<sup>3</sup>";
+                break;
+            case "k":
+                document.getElementById("result").innerHTML = "k="+del+"H/m";
+                break;
+            case "fg":
+                document.getElementById("result").innerHTML = "F="+umn+"H";
+                break;
+            default:
+                document.getElementById('result').innerHTML = "Выберите формулу для вычисления";
+        }
+    } else {
+        document.getElementById('result').innerHTML = "Введите корректные значения";
     }
 }
 
 function check_select(input) {
+    document.getElementById('result').innerHTML = "";
     switch(input) {
         case "f":
             document.getElementById("formula").innerHTML = "F=mg";
