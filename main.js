@@ -84,7 +84,7 @@ function check_select(input) {
             document.getElementById("formula").innerHTML = "F=kl";
             document.getElementById("fnum").innerHTML = "k=";
             document.getElementById("snum").innerHTML = "l=";
-            document.getElementById("fnum-mer").innerHTML = "";
+            document.getElementById("fnum-mer").innerHTML = " ";
             document.getElementById("snum-mer").innerHTML = "m";
             break;
     }
